@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #ffe100;
+    margin-top: 15%;
+}
+
+.form{
+    flex-direction: row;
+    margin-left: 500px;
+}
+
+.signup_form{
+    justify-items: center;
+    display:flex;
+    align-items: center;
+    background-color: #ccc;
+    gap: 10px;
+}
+
+p {
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+
+input[type="email"] {
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid #060505;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button[type="Subscribe"] {
+    color: #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: large;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+button[type="subscribe"]:hover {
+    background-color: #db0000;
+}
