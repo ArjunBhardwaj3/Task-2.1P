@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// Configure Mailgun with your API key and domain
+// Configure Mailgun with my API key and domain
 const api_key = 'dbf6ad012733eacfe7e7cb55414b53b8-28e9457d-0b49d352';
 const domain = 'sandboxaa076ae129014b1d9462321ea352aae4.mailgun.org';
 const mg = mailgun({ apiKey: api_key, domain: domain });
@@ -22,8 +22,8 @@ app.post('/', (req, res) => {
     const data = {
         from: 'Your App <arjunbhardwaj219@gmail.com>',
         to: email,
-        subject: 'Welcome to Our Platform!',
-        text: `Hello, Welcome to our platform! We're excited to have you join us.\n\nBest regards,\nThe Team`
+        subject: 'Welcome to my Web Site!',
+        text: `Hello, Welcome to my Web Site! We're excited to have you join us.\n\nBest regards,\nArjun Bhardwaj`
     };
 
     mg.messages().send(data, (error, body) => {
